@@ -10,6 +10,6 @@ Initial tagged release.
 ### Added
 - Strict, round-trippable RLP `encode`/`decode` plus lenient hex helpers for discv4 captures.
 - `decode_neighbours_payload` for discv4 NEIGHBOURS packets.
-- Typed (mypy), linted (ruff), a pytest suite, and a PyPI Trusted Publishing release workflow.
+- Typed (mypy), linted (ruff), a pytest suite, and GitHub Actions CI.
 
 [0.1.0]: https://github.com/trustsentinel/eth-rlp/releases/tag/v0.1.0

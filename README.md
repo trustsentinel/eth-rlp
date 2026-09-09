@@ -13,9 +13,10 @@ byte-level codec plus lenient hex helpers for real (often truncated) captures.
 
 ## Install
 ```bash
-pip install ethrlp            # once published
-pip install -e ".[dev]"       # from a clone, with test/lint tooling
+pip install git+https://github.com/trustsentinel/eth-rlp   # install from GitHub
+pip install -e ".[dev]"                                    # from a clone, with test/lint tooling
 ```
+The import name is `ethrlp`.
 
 ## Usage
 ```python
@@ -54,12 +55,6 @@ ruff check .      # lint
 mypy              # type-check
 pytest            # tests
 ```
-
-## Publishing
-Tagging `vX.Y.Z` triggers [`release.yml`](.github/workflows/release.yml), which
-builds and publishes to PyPI via **Trusted Publishing** (OIDC — no token in the
-repo). One-time setup: add a trusted publisher on PyPI for this repo, workflow
-`release.yml`, environment `pypi`.
 
 ## Layout
 ```
